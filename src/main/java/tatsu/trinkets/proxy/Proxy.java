@@ -1,5 +1,7 @@
 package tatsu.trinkets.proxy;
 
+import net.minecraftforge.fml.common.registry.GameRegistry;
+import slimeknights.tconstruct.library.TinkerRegistry;
 import tatsu.trinkets.parts.SomeAssemblyRequired;
 import tatsu.trinkets.parts.TrinketPart;
 import tatsu.trinkets.trinkets.AssembledTrinkets;
@@ -19,12 +21,7 @@ public class Proxy extends slimeknights.tconstruct.common.ClientProxy { //The fa
 
     @Override
     public void preInit()
-    {}
-
-    @Override
-    public void init()
     {
-
         SomeAssemblyRequired.registerParts();
         //Register Materials for the parts- as well as the patterns.
         AssembledTrinkets.registerTrinkets();
@@ -32,11 +29,27 @@ public class Proxy extends slimeknights.tconstruct.common.ClientProxy { //The fa
 
     }
 
+    @Override
+    public void init()
+    {
+
+
+
+    }
+
 
     public void registerPart(TrinketPart part)
-    {}
+    {
+        GameRegistry.register(part);
+        TinkerRegistry.registerToolPart(part);
+
+    }
 
     public void registerTrinket(Trinket trinket)
-    {}
+    {
+        GameRegistry.register(trinket);
+        TinkerRegistry.registerTool(trinket);
+
+    }
 
 }

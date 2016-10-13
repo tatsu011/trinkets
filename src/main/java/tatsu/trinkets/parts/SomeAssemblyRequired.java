@@ -20,22 +20,13 @@ public class SomeAssemblyRequired {
 
     public static void registerParts()
     {
-        partAmulet = new partAmulet();
+        //partAmulet = new partAmulet();
         partBand = new partBand();
-        partBelt = new partBelt();
-        partBuckle = new partBuckle();
+        //partBelt = new partBelt();
+        //partBuckle = new partBuckle();
         partSocket = new partSocket();
         //partThread = new partThread();
 
-        //Register them to the Forge Registry
-
-        GameRegistry.register(partBand);
-        GameRegistry.register(partSocket);
-
-        //Register them to the Tinker Registry
-
-        TinkerRegistry.registerToolPart(partBand);
-        TinkerRegistry.registerToolPart(partSocket);
 
         //TinkerRegistry.registerToolPart(partAmulet);
         //TinkerRegistry.registerToolPart(partThread);

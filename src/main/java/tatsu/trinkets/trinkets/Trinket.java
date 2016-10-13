@@ -28,6 +28,7 @@ public abstract class Trinket extends ToolCore implements IBauble {
     {
         super(requiredComponents);
 
+        //Todo: Category.Trinket
         addCategory(Category.NO_MELEE);
     }
 

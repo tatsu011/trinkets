@@ -11,12 +11,14 @@ public class ClientProxy extends Proxy{
     @Override
     public void registerPart(TrinketPart part)
     {
+        super.registerPart(part);
         registerPartModel(part);
     }
 
     @Override
     public void registerTrinket(Trinket trinket)
     {
+        super.registerTrinket(trinket);
         registerToolModel(trinket);
     }
 

@@ -1,8 +1,6 @@
 {
-  "Textures": {
+  "textures": {
     "layer0" : "ticontrinkets:items/ring/band",
     "layer1" : "ticontrinkets:items/ring/socket"
   }
-
-
 }

@@ -20,7 +20,7 @@ public class AssembledTrinkets {
         //Necklace = new trinketNecklace();
         Ring = new trinketRing();
 
-        GameRegistry.register(Ring);
+        //GameRegistry.register(Ring);
         //TinkerRegistry.registerTool(Ring); //Don't need to register twice.
     }
 
