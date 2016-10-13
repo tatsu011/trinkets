@@ -12,5 +12,6 @@ public class partBuckle extends TrinketPart {
 
     public partBuckle() {
         super(144);
+        setName("buckle");
     }
 }

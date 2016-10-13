@@ -1,14 +1,20 @@
 package tatsu.trinkets.trinkets;
 
 import baubles.api.IBauble;
+import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
+import net.minecraft.util.ResourceLocation;
 import slimeknights.tconstruct.library.materials.Material;
+import slimeknights.tconstruct.library.tinkering.Category;
 import slimeknights.tconstruct.library.tinkering.PartMaterialType;
 import slimeknights.tconstruct.library.tools.ToolCore;
+import tatsu.trinkets.TiConTrinkets;
 
 import java.util.List;
+
+import static tatsu.trinkets.TiConTrinkets.proxy;
 
 
 /**
@@ -20,6 +26,14 @@ public abstract class Trinket extends ToolCore implements IBauble {
     public Trinket(PartMaterialType... requiredComponents)
     {
         super(requiredComponents);
+
+        addCategory(Category.NO_MELEE);
+    }
+
+    public void setName(String name)
+    {
+        setRegistryName(TiConTrinkets.MODID + ":" + name);
+        TiConTrinkets.proxy.registerTrinket(this);
     }
 
 

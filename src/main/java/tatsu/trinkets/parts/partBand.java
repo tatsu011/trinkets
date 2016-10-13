@@ -13,5 +13,6 @@ public class partBand extends TrinketPart {
 
     public partBand() {
         super(144);
+        setName("band");
     }
 }

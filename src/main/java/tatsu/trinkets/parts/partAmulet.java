@@ -7,5 +7,6 @@ public class partAmulet extends TrinketPart {
 
     public partAmulet() {
         super(144);
+        setName("amulet");
     }
 }

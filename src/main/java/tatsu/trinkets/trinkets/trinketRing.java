@@ -3,12 +3,8 @@ package tatsu.trinkets.trinkets;
 import baubles.api.BaubleType;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.item.ItemStack;
-import net.minecraft.nbt.NBTTagCompound;
-import slimeknights.tconstruct.library.materials.Material;
 import slimeknights.tconstruct.library.tinkering.PartMaterialType;
 import tatsu.trinkets.parts.SomeAssemblyRequired;
-
-import java.util.List;
 
 /**
  * Created by Tatsu on 10/1/2016.
@@ -19,6 +15,7 @@ public class trinketRing extends Trinket {
     {
         super(PartMaterialType.handle(SomeAssemblyRequired.partBand),
                 PartMaterialType.extra(SomeAssemblyRequired.partSocket));
+        setName("ring");
     }
 
 

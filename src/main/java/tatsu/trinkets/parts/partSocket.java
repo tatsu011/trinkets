@@ -11,6 +11,7 @@ import slimeknights.tconstruct.library.tools.IToolPart;
 public class partSocket extends TrinketPart{
 
     public partSocket() {
-        super(74);
+        super(72);
+        setName("socket");
     }
 }

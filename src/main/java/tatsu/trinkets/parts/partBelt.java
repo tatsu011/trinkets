@@ -8,5 +8,6 @@ public class partBelt extends TrinketPart {
 
     public partBelt() {
         super(432);
+        setName("belt");
     }
 }
