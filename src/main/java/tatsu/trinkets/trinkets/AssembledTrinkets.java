@@ -1,5 +1,6 @@
 package tatsu.trinkets.trinkets;
 
+import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 import slimeknights.tconstruct.library.TinkerRegistry;
@@ -19,7 +20,7 @@ public class AssembledTrinkets {
         //Necklace = new trinketNecklace();
         Ring = new trinketRing();
 
-
+        GameRegistry.register(Ring);
         //TinkerRegistry.registerTool(Ring); //Don't need to register twice.
     }
 

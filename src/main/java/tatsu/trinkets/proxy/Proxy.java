@@ -1,7 +1,5 @@
 package tatsu.trinkets.proxy;
 
-import net.minecraft.item.Item;
-import slimeknights.tconstruct.common.*;
 import tatsu.trinkets.parts.SomeAssemblyRequired;
 import tatsu.trinkets.parts.TrinketPart;
 import tatsu.trinkets.trinkets.AssembledTrinkets;
@@ -15,10 +13,7 @@ public class Proxy extends slimeknights.tconstruct.common.ClientProxy { //The fa
     @Override
     public void postInit()
     {
-        SomeAssemblyRequired.registerParts();
-        //Register Materials for the parts- as well as the patterns.
-        AssembledTrinkets.registerTrinkets();
-        //Hey! don't forget the tool station!
+
 
     }
 
@@ -29,6 +24,11 @@ public class Proxy extends slimeknights.tconstruct.common.ClientProxy { //The fa
     @Override
     public void init()
     {
+
+        SomeAssemblyRequired.registerParts();
+        //Register Materials for the parts- as well as the patterns.
+        AssembledTrinkets.registerTrinkets();
+        //Hey! don't forget the tool station!
 
     }
 

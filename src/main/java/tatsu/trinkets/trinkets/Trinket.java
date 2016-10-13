@@ -11,6 +11,7 @@ import slimeknights.tconstruct.library.tinkering.Category;
 import slimeknights.tconstruct.library.tinkering.PartMaterialType;
 import slimeknights.tconstruct.library.tools.ToolCore;
 import tatsu.trinkets.TiConTrinkets;
+import tatsu.trinkets.Utils;
 
 import java.util.List;
 
@@ -32,7 +33,8 @@ public abstract class Trinket extends ToolCore implements IBauble {
 
     public void setName(String name)
     {
-        setRegistryName(TiConTrinkets.MODID + ":" + name);
+        setUnlocalizedName(Utils.prefix(name));
+        setRegistryName(Utils.getResource(name));
         TiConTrinkets.proxy.registerTrinket(this);
     }
 
